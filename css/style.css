@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0; 
+    font-family: sans-serif;
+    overflow: hidden;
+}
+#digital-clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG5hdHVyZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#digital-clock h2{
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+}
+#digital-clock .clock{
+    display: flex;
+    gap: 20px;
+}
+#digital-clock .clock div{
+    padding-top:30px;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.5 );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 130px;
+}
+#digital-clock .clock div:last-child{
+   padding: 10px 15px;
+   margin-top: auto;
+   background-color: green;
+   width: fit-content;
+}
+#digital-clock .clock div span{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3 );
+    text-align: center;
+}
+#digital-clock .clock div:last-child span{
+    font-size: 20px;
+    font-weight: 300;
+ }
+#digital-clock .clock div span.text{
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding: 10px;
+    background-color: #000;
+}
